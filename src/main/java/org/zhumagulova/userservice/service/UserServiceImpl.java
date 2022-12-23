@@ -1,9 +1,11 @@
 package org.zhumagulova.userservice.service;
 
+
+import jakarta.inject.Inject;
 import org.zhumagulova.userservice.dao.UserDao;
 import org.zhumagulova.userservice.model.User;
 
-import javax.inject.Inject;
+import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
@@ -20,4 +22,8 @@ public class UserServiceImpl implements UserService {
         userDao.saveUser(user);
     }
 
+    @Override
+    public List<User> getAll() {
+        return userDao.getAll();
+    }
 }

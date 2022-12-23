@@ -4,7 +4,7 @@ package org.zhumagulova.userservice.model;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 import java.util.Set;
