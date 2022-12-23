@@ -32,7 +32,7 @@ public class UserResource {
                 .collect(Collectors.toList());
     }
 
-    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     @POST
     public void createUser(@QueryParam("email") String email, @QueryParam("password") String password) {
         UserDto userDto = new UserDto (email, password);
